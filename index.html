@@ -3,62 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>John Doe | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Header Section -->
   <header>
-    <nav>
+    <div class="container">
       <h1>John Doe</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="api-demo.html">API Demo</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      <p>Full-Stack Developer | Python, C#, JavaScript</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Welcome! I'm John Doe, a passionate developer skilled in Python, C#, and JavaScript. I love building dynamic, responsive applications.</p>
-    <h3>Skills</h3>
-    <ul>
-      <li>Python</li>
-      <li>C#</li>
-      <li>JavaScript</li>
-      <li>Web Development</li>
-    </ul>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate developer with expertise in Python, C#, and JavaScript.
+        I specialize in creating dynamic, responsive applications for web and desktop.
+      </p>
+    </div>
   </section>
 
-  <!-- Featured Projects Section -->
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="project">
-      <h3>Weather App</h3>
-      <p>A Python-based weather application with real-time data.</p>
-      <a href="projects.html">View More</a>
-    </div>
-    <div class="project">
-      <h3>Chat Application</h3>
-      <p>A real-time chat app built with C# and SignalR.</p>
-      <a href="projects.html">View More</a>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Weather App</h3>
+          <p>Python-based app with real-time weather updates.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Real-Time Chat</h3>
+          <p>C# and SignalR-powered chat application.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out through <a href="mailto:your-email@example.com">email</a> or connect with me on <a href="https://github.com/your-profile">GitHub</a>.</p>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Have a question or want to work together? Reach out!</p>
+      <ul class="contact-links">
+        <li><a href="mailto:your-email@example.com">Email</a></li>
+        <li><a href="https://github.com/your-profile">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/your-profile">LinkedIn</a></li>
+      </ul>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 John Doe. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
